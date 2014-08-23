@@ -52,6 +52,7 @@ asInt (this is provided to perform truncating)
 asBool (internally there are 3 datatypes: string, bool and double. The conversion depends on the function)
 asDouble
 not
+calc (refer to zcl.Calculator help)
 
 Tips
 ==============

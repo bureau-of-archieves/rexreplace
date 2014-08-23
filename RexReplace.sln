@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RexReplace", "RexReplace.csproj", "{E12D7AF9-F4DE-4B63-B88A-07E8444415CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZCL.Calculator", "..\zcl.calculator\ZCL.Calculator\ZCL.Calculator.csproj", "{621E4E7E-1BCB-42B7-ADFB-54A5141CF758}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -23,10 +25,20 @@ Global
 		{E12D7AF9-F4DE-4B63-B88A-07E8444415CC}.Debug|x86.ActiveCfg = Debug|x86
 		{E12D7AF9-F4DE-4B63-B88A-07E8444415CC}.Debug|x86.Build.0 = Debug|x86
 		{E12D7AF9-F4DE-4B63-B88A-07E8444415CC}.Release|Any CPU.ActiveCfg = Release|x86
-		{E12D7AF9-F4DE-4B63-B88A-07E8444415CC}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{E12D7AF9-F4DE-4B63-B88A-07E8444415CC}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E12D7AF9-F4DE-4B63-B88A-07E8444415CC}.Release|Mixed Platforms.ActiveCfg = Debug|x86
+		{E12D7AF9-F4DE-4B63-B88A-07E8444415CC}.Release|Mixed Platforms.Build.0 = Debug|x86
 		{E12D7AF9-F4DE-4B63-B88A-07E8444415CC}.Release|x86.ActiveCfg = Release|x86
 		{E12D7AF9-F4DE-4B63-B88A-07E8444415CC}.Release|x86.Build.0 = Release|x86
+		{621E4E7E-1BCB-42B7-ADFB-54A5141CF758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621E4E7E-1BCB-42B7-ADFB-54A5141CF758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621E4E7E-1BCB-42B7-ADFB-54A5141CF758}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{621E4E7E-1BCB-42B7-ADFB-54A5141CF758}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{621E4E7E-1BCB-42B7-ADFB-54A5141CF758}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{621E4E7E-1BCB-42B7-ADFB-54A5141CF758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621E4E7E-1BCB-42B7-ADFB-54A5141CF758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{621E4E7E-1BCB-42B7-ADFB-54A5141CF758}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{621E4E7E-1BCB-42B7-ADFB-54A5141CF758}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{621E4E7E-1BCB-42B7-ADFB-54A5141CF758}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

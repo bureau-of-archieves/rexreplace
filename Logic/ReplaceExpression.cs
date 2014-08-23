@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using ZCL.Interpreters;
 
 namespace RexReplace.GUI.Logic
 {
@@ -501,7 +502,7 @@ namespace RexReplace.GUI.Logic
 
             FUNCTIONS.Add("asBool", new ReplaceOp((x, y) =>
             {
-                return StringToBool(x[1].ToString()); 
+                return StringToBool(x[1].ToString());
             }));
 
             FUNCTIONS.Add("asDouble", new ReplaceOp((x, y) =>
@@ -511,10 +512,24 @@ namespace RexReplace.GUI.Logic
 
             FUNCTIONS.Add("not", new ReplaceOp((x, y) =>
             {
-                return !StringToBool(x[1].ToString()); 
+                return !StringToBool(x[1].ToString());
+            }));
+
+            FUNCTIONS.Add("calc", new ReplaceOp((x, y) =>
+            {
+                try
+                {
+                    return calculator.Compute(x[1].ToString());
+                }
+                catch
+                {
+                    return string.Format("[invalid calc expression: \"{0}\"]",  x[1].ToString().Replace("\"", "\\\""));
+                }
             }));
 
         }
+
+        private static Calculator calculator = new Calculator();
 
         private static bool StringToBool(String value)
         {
