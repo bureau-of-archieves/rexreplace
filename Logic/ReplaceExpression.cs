@@ -527,8 +527,23 @@ namespace RexReplace.GUI.Logic
                 }
             }));
 
+            FUNCTIONS.Add("rand", new ReplaceOp((x, y) => {
+
+                if (x.Count < 2)
+                    return rand.Next();
+
+                var upperBound = Convert.ToInt32(x[1]);
+                if (x.Count < 3)
+                    return rand.Next(upperBound);
+
+                var lowerBound = upperBound;
+                upperBound = Convert.ToInt32(x[2]);
+                return rand.Next(lowerBound, upperBound);
+
+            }, 0, 2));
         }
 
+        private static Random rand = new Random();
         private static Calculator calculator = new Calculator();
 
         private static bool StringToBool(String value)

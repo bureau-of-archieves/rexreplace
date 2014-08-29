@@ -27,7 +27,7 @@ namespace RexReplace.GUI.Logic
 
         internal ReplaceOp(Func<List<object>, IReplaceContext, object> body, int minArgNumber = 1, int maxArgNumber = 1)
         {
-            MinArgNumber = MinArgNumber;
+            MinArgNumber = minArgNumber;
             MaxArgNumber = maxArgNumber;
             Body = body;
         }
