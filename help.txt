@@ -53,6 +53,7 @@ asBool (internally there are 3 datatypes: string, bool and double. The conversio
 asDouble
 not
 calc (refer to zcl.Calculator help)
+rand
 
 Tips
 ==============
