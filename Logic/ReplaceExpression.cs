@@ -123,7 +123,7 @@ namespace RexReplace.GUI.Logic
                     {
                         ex.SourceCode = expr;
                         ex.SourceIndex = tokenStartIndex;
-                        throw ex;
+                        throw;
                     }
                     parms.Add(literal);
                     state = ParsingState.ParmStart;
@@ -143,7 +143,7 @@ namespace RexReplace.GUI.Logic
                         {
                             ex.SourceCode = expr;
                             ex.SourceIndex = tokenStartIndex;
-                            throw ex;
+                            throw;
                         }
                         parms.Add(literal);
                         state = ParsingState.ParmEnd;

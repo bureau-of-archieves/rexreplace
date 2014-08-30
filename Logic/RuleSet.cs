@@ -46,7 +46,7 @@ namespace RexReplace.GUI.Logic
                     catch (RuleException rex)
                     {
                         rex.RuleId = Rules.IndexOf(rule) + 1;
-                        throw rex;
+                        throw;
                     }
 
                     index = m.Index + m.Value.Length;
